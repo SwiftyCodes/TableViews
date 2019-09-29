@@ -9,6 +9,7 @@
 import UIKit
 
 class MobileBrand {
+    
     var brandName: String?
     var modelName: [String]?
     

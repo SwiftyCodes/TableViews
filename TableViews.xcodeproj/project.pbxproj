@@ -15,6 +15,9 @@
 		7586F98C23408D02008BC545 /* ButtonInCell_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586F98B23408D02008BC545 /* ButtonInCell_VC.swift */; };
 		75C0FE012340A53C004DEB7E /* Dropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0FE002340A53C004DEB7E /* Dropdown.swift */; };
 		75C0FE052340AE2F004DEB7E /* MultipleSectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0FE042340AE2F004DEB7E /* MultipleSectionVC.swift */; };
+		75C0FE092340B6E4004DEB7E /* SectionDropDownVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0FE082340B6E3004DEB7E /* SectionDropDownVC.swift */; };
+		75C0FE0B2340B72E004DEB7E /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0FE0A2340B72E004DEB7E /* DataModel.swift */; };
+		75C0FE0D2340B800004DEB7E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0FE0C2340B800004DEB7E /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		7586F98B23408D02008BC545 /* ButtonInCell_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonInCell_VC.swift; sourceTree = "<group>"; };
 		75C0FE002340A53C004DEB7E /* Dropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dropdown.swift; sourceTree = "<group>"; };
 		75C0FE042340AE2F004DEB7E /* MultipleSectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSectionVC.swift; sourceTree = "<group>"; };
+		75C0FE082340B6E3004DEB7E /* SectionDropDownVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDropDownVC.swift; sourceTree = "<group>"; };
+		75C0FE0A2340B72E004DEB7E /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		75C0FE0C2340B800004DEB7E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +66,11 @@
 		7586F97323408C16008BC545 /* TableViews */ = {
 			isa = PBXGroup;
 			children = (
-				75C0FE022340A998004DEB7E /* Multiple Section */,
-				75C0FDFE2340A4FE004DEB7E /* Drop Down */,
-				7586F98623408C86008BC545 /* Button in Cell */,
 				7586F97423408C16008BC545 /* AppDelegate.swift */,
+				75C0FE062340B568004DEB7E /* Section Drop down */,
+				75C0FE022340A998004DEB7E /* Multiple Section */,
+				75C0FDFE2340A4FE004DEB7E /* Drop Down on Button */,
+				7586F98623408C86008BC545 /* Button action in Cell */,
 				7586F97823408C16008BC545 /* Main.storyboard */,
 				7586F97B23408C18008BC545 /* Assets.xcassets */,
 				7586F97D23408C18008BC545 /* LaunchScreen.storyboard */,
@@ -72,13 +79,13 @@
 			path = TableViews;
 			sourceTree = "<group>";
 		};
-		7586F98623408C86008BC545 /* Button in Cell */ = {
+		7586F98623408C86008BC545 /* Button action in Cell */ = {
 			isa = PBXGroup;
 			children = (
 				7586F98823408CB3008BC545 /* View */,
 				7586F98723408C98008BC545 /* Controller */,
 			);
-			path = "Button in Cell";
+			path = "Button action in Cell";
 			sourceTree = "<group>";
 		};
 		7586F98723408C98008BC545 /* Controller */ = {
@@ -97,12 +104,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		75C0FDFE2340A4FE004DEB7E /* Drop Down */ = {
+		75C0FDFE2340A4FE004DEB7E /* Drop Down on Button */ = {
 			isa = PBXGroup;
 			children = (
 				75C0FDFF2340A511004DEB7E /* Controller */,
 			);
-			path = "Drop Down";
+			path = "Drop Down on Button";
 			sourceTree = "<group>";
 		};
 		75C0FDFF2340A511004DEB7E /* Controller */ = {
@@ -127,6 +134,40 @@
 				75C0FE042340AE2F004DEB7E /* MultipleSectionVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		75C0FE062340B568004DEB7E /* Section Drop down */ = {
+			isa = PBXGroup;
+			children = (
+				75C0FE0E2340B93C004DEB7E /* Model */,
+				75C0FE0F2340B945004DEB7E /* View */,
+				75C0FE072340B5E8004DEB7E /* Controller */,
+			);
+			path = "Section Drop down";
+			sourceTree = "<group>";
+		};
+		75C0FE072340B5E8004DEB7E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75C0FE082340B6E3004DEB7E /* SectionDropDownVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		75C0FE0E2340B93C004DEB7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75C0FE0A2340B72E004DEB7E /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75C0FE0F2340B945004DEB7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75C0FE0C2340B800004DEB7E /* HeaderView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,11 +241,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C0FE0B2340B72E004DEB7E /* DataModel.swift in Sources */,
 				7586F98A23408CE5008BC545 /* ButtonTableViewCell.swift in Sources */,
 				75C0FE052340AE2F004DEB7E /* MultipleSectionVC.swift in Sources */,
 				7586F97523408C16008BC545 /* AppDelegate.swift in Sources */,
+				75C0FE092340B6E4004DEB7E /* SectionDropDownVC.swift in Sources */,
 				75C0FE012340A53C004DEB7E /* Dropdown.swift in Sources */,
 				7586F98C23408D02008BC545 /* ButtonInCell_VC.swift in Sources */,
+				75C0FE0D2340B800004DEB7E /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
