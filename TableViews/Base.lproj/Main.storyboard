@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Zj-uP-Xbb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -62,6 +62,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Dropdown-->
+        <scene sceneID="O5Y-gb-XOa">
+            <objects>
+                <viewController id="9Zj-uP-Xbb" customClass="Dropdown" customModule="TableViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dry-nl-LAr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aeb-Yf-5o2">
+                                <rect key="frame" x="30" y="80" width="315" height="40"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.0" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="a5S-mN-ske"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Select Fruit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickSelectFruit:" destination="9Zj-uP-Xbb" eventType="touchUpInside" id="g4A-W9-paY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rql-gx-ZUE">
+                                <rect key="frame" x="30" y="213" width="315" height="40"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.0" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gUZ-Ke-8tx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Select Gender">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickSelectGender:" destination="9Zj-uP-Xbb" eventType="touchUpInside" id="2BH-YT-2T8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Aeb-Yf-5o2" firstAttribute="top" secondItem="SPx-2e-7DZ" secondAttribute="top" constant="60" id="Dy2-HJ-OJU"/>
+                            <constraint firstItem="SPx-2e-7DZ" firstAttribute="trailing" secondItem="Rql-gx-ZUE" secondAttribute="trailing" constant="30" id="RxY-Fn-3bW"/>
+                            <constraint firstItem="Aeb-Yf-5o2" firstAttribute="leading" secondItem="SPx-2e-7DZ" secondAttribute="leading" constant="30" id="du0-lG-Uk9"/>
+                            <constraint firstItem="Rql-gx-ZUE" firstAttribute="top" secondItem="Aeb-Yf-5o2" secondAttribute="bottom" constant="93" id="naP-rC-c23"/>
+                            <constraint firstItem="SPx-2e-7DZ" firstAttribute="trailing" secondItem="Aeb-Yf-5o2" secondAttribute="trailing" constant="30" id="r72-hc-VpL"/>
+                            <constraint firstItem="Rql-gx-ZUE" firstAttribute="leading" secondItem="SPx-2e-7DZ" secondAttribute="leading" constant="30" id="w7d-vY-qH2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SPx-2e-7DZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnSelectFruit" destination="Aeb-Yf-5o2" id="9HF-b9-5Jx"/>
+                        <outlet property="btnSelectGender" destination="Rql-gx-ZUE" id="mEb-id-9Z9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NJk-k4-mbu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="134"/>
         </scene>
     </scenes>
 </document>
