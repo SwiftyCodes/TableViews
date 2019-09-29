@@ -14,6 +14,7 @@
 		7586F98A23408CE5008BC545 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586F98923408CE5008BC545 /* ButtonTableViewCell.swift */; };
 		7586F98C23408D02008BC545 /* ButtonInCell_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586F98B23408D02008BC545 /* ButtonInCell_VC.swift */; };
 		75C0FE012340A53C004DEB7E /* Dropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0FE002340A53C004DEB7E /* Dropdown.swift */; };
+		75C0FE052340AE2F004DEB7E /* MultipleSectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0FE042340AE2F004DEB7E /* MultipleSectionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7586F98923408CE5008BC545 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		7586F98B23408D02008BC545 /* ButtonInCell_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonInCell_VC.swift; sourceTree = "<group>"; };
 		75C0FE002340A53C004DEB7E /* Dropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dropdown.swift; sourceTree = "<group>"; };
+		75C0FE042340AE2F004DEB7E /* MultipleSectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSectionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		7586F97323408C16008BC545 /* TableViews */ = {
 			isa = PBXGroup;
 			children = (
+				75C0FE022340A998004DEB7E /* Multiple Section */,
 				75C0FDFE2340A4FE004DEB7E /* Drop Down */,
 				7586F98623408C86008BC545 /* Button in Cell */,
 				7586F97423408C16008BC545 /* AppDelegate.swift */,
@@ -106,6 +109,22 @@
 			isa = PBXGroup;
 			children = (
 				75C0FE002340A53C004DEB7E /* Dropdown.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		75C0FE022340A998004DEB7E /* Multiple Section */ = {
+			isa = PBXGroup;
+			children = (
+				75C0FE032340A9B3004DEB7E /* Controller */,
+			);
+			path = "Multiple Section";
+			sourceTree = "<group>";
+		};
+		75C0FE032340A9B3004DEB7E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75C0FE042340AE2F004DEB7E /* MultipleSectionVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7586F98A23408CE5008BC545 /* ButtonTableViewCell.swift in Sources */,
+				75C0FE052340AE2F004DEB7E /* MultipleSectionVC.swift in Sources */,
 				7586F97523408C16008BC545 /* AppDelegate.swift in Sources */,
 				75C0FE012340A53C004DEB7E /* Dropdown.swift in Sources */,
 				7586F98C23408D02008BC545 /* ButtonInCell_VC.swift in Sources */,
